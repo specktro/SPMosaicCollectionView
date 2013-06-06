@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPViewController : UIViewController
+@interface SPViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @end
