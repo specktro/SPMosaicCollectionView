@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 specktro. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BBGridLayout.h"
 
-@interface SPViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface SPViewController : UIViewController <UICollectionViewDataSource, BBGridLayoutDelegate>
 
 @end
