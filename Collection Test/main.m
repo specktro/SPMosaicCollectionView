@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Collection Test
+//  SPMosaicCollectionView
 //
 //  Created by specktro on 06/06/13.
-//  Copyright (c) 2013 specktro. All rights reserved.
+//  Copyright (c) 2013 nonull. All rights reserved.
 //
 
 #import "SPAppDelegate.h"
