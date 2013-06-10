@@ -1,12 +1,12 @@
 //
-//  BBGridLayout.h
-//  BestBite Host
+//  SPGridLayout.h
+//  SPMosaicCollectionView
 //
 //  Created by specktro on 05/06/13.
-//  Copyright (c) 2013 ironbit. All rights reserved.
+//  Copyright (c) 2013 nonull. All rights reserved.
 //
 
-@protocol BBGridLayoutDelegate <UICollectionViewDelegate>
+@protocol SPGridLayoutDelegate <UICollectionViewDelegate>
 
 - (NSInteger)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)cvl numberOfRowsInSection:(NSInteger)section;
 - (CGSize)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)cvl sizeForItemWithHeight:(CGFloat)height atIndexPath:(NSIndexPath *)indexPath;
@@ -14,7 +14,7 @@
 
 @end
 
-@interface BBGridLayout : UICollectionViewLayout
+@interface SPGridLayout : UICollectionViewLayout
 
 @property (nonatomic, assign) CGFloat headerWidth;
 

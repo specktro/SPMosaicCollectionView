@@ -1,12 +1,12 @@
 //
-//  BBGridLayoutSection.h
-//  BestBite Host
+//  SPGridLayoutSection.h
+//  SPMosaicCollectionView
 //
 //  Created by specktro on 05/06/13.
-//  Copyright (c) 2013 ironbit. All rights reserved.
+//  Copyright (c) 2013 nonull. All rights reserved.
 //
 
-@interface BBGridLayoutSection : NSObject
+@interface SPGridLayoutSection : NSObject
 
 @property (nonatomic, assign, readonly) CGRect frame;
 @property (nonatomic, assign, readonly) UIEdgeInsets itemInsets;

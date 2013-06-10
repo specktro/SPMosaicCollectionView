@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		509F23FF17610D320079C4A7 /* BBGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FB17610D320079C4A7 /* BBGridLayout.m */; };
-		509F240017610D320079C4A7 /* BBGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FD17610D320079C4A7 /* BBGridLayoutSection.m */; };
+		509F23FF17610D320079C4A7 /* SPGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FB17610D320079C4A7 /* SPGridLayout.m */; };
+		509F240017610D320079C4A7 /* SPGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */; };
 		50C8AAAF176100AC001D6CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAAE176100AC001D6CC0 /* UIKit.framework */; };
 		50C8AAB1176100AC001D6CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAB0176100AC001D6CC0 /* Foundation.framework */; };
 		50C8AAB3176100AC001D6CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAB2176100AC001D6CC0 /* CoreGraphics.framework */; };
@@ -23,18 +23,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		509F23FB17610D320079C4A7 /* BBGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGridLayout.m; sourceTree = "<group>"; };
-		509F23FC17610D320079C4A7 /* BBGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGridLayoutSection.h; sourceTree = "<group>"; };
-		509F23FD17610D320079C4A7 /* BBGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGridLayoutSection.m; sourceTree = "<group>"; };
-		509F23FE17610D320079C4A7 /* BBGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGridLayout.h; sourceTree = "<group>"; };
-		50C8AAAB176100AC001D6CC0 /* Collection Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		509F23FB17610D320079C4A7 /* SPGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGridLayout.m; sourceTree = "<group>"; };
+		509F23FC17610D320079C4A7 /* SPGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGridLayoutSection.h; sourceTree = "<group>"; };
+		509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGridLayoutSection.m; sourceTree = "<group>"; };
+		509F23FE17610D320079C4A7 /* SPGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGridLayout.h; sourceTree = "<group>"; };
+		50C8AAAB176100AC001D6CC0 /* SPMosaicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMosaicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C8AAAE176100AC001D6CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50C8AAB0176100AC001D6CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50C8AAB2176100AC001D6CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		50C8AAB6176100AC001D6CC0 /* Collection Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Collection Test-Info.plist"; sourceTree = "<group>"; };
+		50C8AAB6176100AC001D6CC0 /* SPMosaicCollectionView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPMosaicCollectionView-Info.plist"; sourceTree = "<group>"; };
 		50C8AAB8176100AC001D6CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50C8AABA176100AC001D6CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		50C8AABC176100AC001D6CC0 /* Collection Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Collection Test-Prefix.pch"; sourceTree = "<group>"; };
+		50C8AABC176100AC001D6CC0 /* SPMosaicCollectionView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPMosaicCollectionView-Prefix.pch"; sourceTree = "<group>"; };
 		50C8AABD176100AC001D6CC0 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		50C8AABE176100AC001D6CC0 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
 		50C8AAC0176100AC001D6CC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -59,6 +59,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A6E97417662106003F8638 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				509F23FE17610D320079C4A7 /* SPGridLayout.h */,
+				509F23FB17610D320079C4A7 /* SPGridLayout.m */,
+				509F23FC17610D320079C4A7 /* SPGridLayoutSection.h */,
+				509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		50A6E97517662112003F8638 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50A6E97417662106003F8638 /* Layout */,
+				50C8AAC6176100AC001D6CC0 /* SPViewController.h */,
+				50C8AAC7176100AC001D6CC0 /* SPViewController.m */,
+				50C8AAC9176100AC001D6CC0 /* SPViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		50A6E97617662128003F8638 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				50C8AABD176100AC001D6CC0 /* SPAppDelegate.h */,
+				50C8AABE176100AC001D6CC0 /* SPAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
 		50C8AAA2176100AC001D6CC0 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +102,7 @@
 		50C8AAAC176100AC001D6CC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50C8AAAB176100AC001D6CC0 /* Collection Test.app */,
+				50C8AAAB176100AC001D6CC0 /* SPMosaicCollectionView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,15 +120,8 @@
 		50C8AAB4176100AC001D6CC0 /* Collection Test */ = {
 			isa = PBXGroup;
 			children = (
-				509F23FE17610D320079C4A7 /* BBGridLayout.h */,
-				509F23FB17610D320079C4A7 /* BBGridLayout.m */,
-				509F23FC17610D320079C4A7 /* BBGridLayoutSection.h */,
-				509F23FD17610D320079C4A7 /* BBGridLayoutSection.m */,
-				50C8AABD176100AC001D6CC0 /* SPAppDelegate.h */,
-				50C8AABE176100AC001D6CC0 /* SPAppDelegate.m */,
-				50C8AAC6176100AC001D6CC0 /* SPViewController.h */,
-				50C8AAC7176100AC001D6CC0 /* SPViewController.m */,
-				50C8AAC9176100AC001D6CC0 /* SPViewController.xib */,
+				50A6E97617662128003F8638 /* App Delegate */,
+				50A6E97517662112003F8638 /* Controller */,
 				50C8AAB5176100AC001D6CC0 /* Supporting Files */,
 			);
 			path = "Collection Test";
@@ -106,10 +130,10 @@
 		50C8AAB5176100AC001D6CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				50C8AAB6176100AC001D6CC0 /* Collection Test-Info.plist */,
+				50C8AAB6176100AC001D6CC0 /* SPMosaicCollectionView-Info.plist */,
 				50C8AAB7176100AC001D6CC0 /* InfoPlist.strings */,
 				50C8AABA176100AC001D6CC0 /* main.m */,
-				50C8AABC176100AC001D6CC0 /* Collection Test-Prefix.pch */,
+				50C8AABC176100AC001D6CC0 /* SPMosaicCollectionView-Prefix.pch */,
 				50C8AAC0176100AC001D6CC0 /* Default.png */,
 				50C8AAC2176100AC001D6CC0 /* Default@2x.png */,
 				50C8AAC4176100AC001D6CC0 /* Default-568h@2x.png */,
@@ -120,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50C8AAAA176100AC001D6CC0 /* Collection Test */ = {
+		50C8AAAA176100AC001D6CC0 /* SPMosaicCollectionView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C8AACE176100AC001D6CC0 /* Build configuration list for PBXNativeTarget "Collection Test" */;
+			buildConfigurationList = 50C8AACE176100AC001D6CC0 /* Build configuration list for PBXNativeTarget "SPMosaicCollectionView" */;
 			buildPhases = (
 				50C8AAA7176100AC001D6CC0 /* Sources */,
 				50C8AAA8176100AC001D6CC0 /* Frameworks */,
@@ -132,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = "Collection Test";
+			name = SPMosaicCollectionView;
 			productName = "Collection Test";
-			productReference = 50C8AAAB176100AC001D6CC0 /* Collection Test.app */;
+			productReference = 50C8AAAB176100AC001D6CC0 /* SPMosaicCollectionView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +171,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = specktro;
 			};
-			buildConfigurationList = 50C8AAA6176100AC001D6CC0 /* Build configuration list for PBXProject "Collection Test" */;
+			buildConfigurationList = 50C8AAA6176100AC001D6CC0 /* Build configuration list for PBXProject "SPMosaicCollectionView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -159,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50C8AAAA176100AC001D6CC0 /* Collection Test */,
+				50C8AAAA176100AC001D6CC0 /* SPMosaicCollectionView */,
 			);
 		};
 /* End PBXProject section */
@@ -187,8 +211,8 @@
 				50C8AABB176100AC001D6CC0 /* main.m in Sources */,
 				50C8AABF176100AC001D6CC0 /* SPAppDelegate.m in Sources */,
 				50C8AAC8176100AC001D6CC0 /* SPViewController.m in Sources */,
-				509F23FF17610D320079C4A7 /* BBGridLayout.m in Sources */,
-				509F240017610D320079C4A7 /* BBGridLayoutSection.m in Sources */,
+				509F23FF17610D320079C4A7 /* SPGridLayout.m in Sources */,
+				509F240017610D320079C4A7 /* SPGridLayoutSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Collection Test/Collection Test-Prefix.pch";
-				INFOPLIST_FILE = "Collection Test/Collection Test-Info.plist";
+				GCC_PREFIX_HEADER = "Collection Test/SPMosaicCollectionView-Prefix.pch";
+				INFOPLIST_FILE = "Collection Test/SPMosaicCollectionView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SPMosaicCollectionView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -288,10 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Collection Test/Collection Test-Prefix.pch";
-				INFOPLIST_FILE = "Collection Test/Collection Test-Info.plist";
+				GCC_PREFIX_HEADER = "Collection Test/SPMosaicCollectionView-Prefix.pch";
+				INFOPLIST_FILE = "Collection Test/SPMosaicCollectionView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SPMosaicCollectionView;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -299,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50C8AAA6176100AC001D6CC0 /* Build configuration list for PBXProject "Collection Test" */ = {
+		50C8AAA6176100AC001D6CC0 /* Build configuration list for PBXProject "SPMosaicCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C8AACC176100AC001D6CC0 /* Debug */,
@@ -308,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50C8AACE176100AC001D6CC0 /* Build configuration list for PBXNativeTarget "Collection Test" */ = {
+		50C8AACE176100AC001D6CC0 /* Build configuration list for PBXNativeTarget "SPMosaicCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C8AACF176100AC001D6CC0 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  SPViewController.m
-//  Collection Test
+//  SPMosaicCollectionView
 //
 //  Created by specktro on 06/06/13.
 //  Copyright (c) 2013 specktro. All rights reserved.
@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"identifier"];
-    BBGridLayout *gridLayout = [[BBGridLayout alloc] init];
+    SPGridLayout *gridLayout = [[SPGridLayout alloc] init];
     gridLayout.headerWidth = 0.0f;
     self.collectionView.collectionViewLayout = gridLayout;
 }

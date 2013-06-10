@@ -1,14 +1,14 @@
 //
-//  BBGridLayoutSection.m
-//  BestBite Host
+//  SPGridLayoutSection.m
+//  SPMosaicCollectionView
 //
 //  Created by specktro on 05/06/13.
-//  Copyright (c) 2013 ironbit. All rights reserved.
+//  Copyright (c) 2013 nonull. All rights reserved.
 //
 
-#import "BBGridLayoutSection.h"
+#import "SPGridLayoutSection.h"
 
-@interface BBGridLayoutSection () {
+@interface SPGridLayoutSection () {
     CGRect                  _frame;
     UIEdgeInsets            _itemInsets;
     CGFloat                 _rowHeigth;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation BBGridLayoutSection
+@implementation SPGridLayoutSection
 
 - (id)initWithOrigin:(CGPoint)origin heigth:(CGFloat)heigth rows:(NSInteger)rows itemInsets:(UIEdgeInsets)itemInsets {
     if ((self = [super init])) {
