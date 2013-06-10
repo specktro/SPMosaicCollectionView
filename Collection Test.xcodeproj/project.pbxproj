@@ -59,6 +59,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A6E97417662106003F8638 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				509F23FE17610D320079C4A7 /* BBGridLayout.h */,
+				509F23FB17610D320079C4A7 /* BBGridLayout.m */,
+				509F23FC17610D320079C4A7 /* BBGridLayoutSection.h */,
+				509F23FD17610D320079C4A7 /* BBGridLayoutSection.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		50A6E97517662112003F8638 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50A6E97417662106003F8638 /* Layout */,
+				50C8AAC6176100AC001D6CC0 /* SPViewController.h */,
+				50C8AAC7176100AC001D6CC0 /* SPViewController.m */,
+				50C8AAC9176100AC001D6CC0 /* SPViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		50A6E97617662128003F8638 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				50C8AABD176100AC001D6CC0 /* SPAppDelegate.h */,
+				50C8AABE176100AC001D6CC0 /* SPAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
 		50C8AAA2176100AC001D6CC0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,15 +120,8 @@
 		50C8AAB4176100AC001D6CC0 /* Collection Test */ = {
 			isa = PBXGroup;
 			children = (
-				509F23FE17610D320079C4A7 /* BBGridLayout.h */,
-				509F23FB17610D320079C4A7 /* BBGridLayout.m */,
-				509F23FC17610D320079C4A7 /* BBGridLayoutSection.h */,
-				509F23FD17610D320079C4A7 /* BBGridLayoutSection.m */,
-				50C8AABD176100AC001D6CC0 /* SPAppDelegate.h */,
-				50C8AABE176100AC001D6CC0 /* SPAppDelegate.m */,
-				50C8AAC6176100AC001D6CC0 /* SPViewController.h */,
-				50C8AAC7176100AC001D6CC0 /* SPViewController.m */,
-				50C8AAC9176100AC001D6CC0 /* SPViewController.xib */,
+				50A6E97617662128003F8638 /* App Delegate */,
+				50A6E97517662112003F8638 /* Controller */,
 				50C8AAB5176100AC001D6CC0 /* Supporting Files */,
 			);
 			path = "Collection Test";

@@ -3,7 +3,7 @@
 //  BestBite Host
 //
 //  Created by specktro on 05/06/13.
-//  Copyright (c) 2013 ironbit. All rights reserved.
+//  Copyright (c) 2013 nonull. All rights reserved.
 //
 
 @interface BBGridLayoutSection : NSObject
