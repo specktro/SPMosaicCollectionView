@@ -34,27 +34,41 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"identifier"];
+    [self.collectionView registerClass:[UICollectionViewCell class]
+            forCellWithReuseIdentifier:@"itemIdentifier"];
+    [self.collectionView registerClass:[UICollectionReusableView class]
+            forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                   withReuseIdentifier:@"headerIdentifier"];
     SPGridLayout *gridLayout = [[SPGridLayout alloc] init];
     gridLayout.headerWidth = 0.0f;
     self.collectionView.collectionViewLayout = gridLayout;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 453;
+    return section ? 5 : 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"identifier" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"itemIdentifier" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:(arc4random()%255) / 255.0f green:(arc4random()%255) / 255.0f blue:(arc4random()%255) / 255.0f alpha:1.0f];
     return cell;
 }
 
-#pragma mark - UICollectionViewDelegateFlowLayout Selectors
+#pragma mark - UICollectionViewDelegate Selectors
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                          withReuseIdentifier:@"headerIdentifier"
+                                                                                 forIndexPath:indexPath];
+    header.backgroundColor = [UIColor whiteColor];
+    header.layer.borderColor = [UIColor redColor].CGColor;
+    header.layer.borderWidth = 3.0f;
+    return header;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     DLog(@"select item at indexPath > %@", indexPath);
 }
@@ -65,12 +79,15 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)cvl sizeForItemWithHeight:(CGFloat)height atIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = CGSizeMake(arc4random() % 500, height);
-    return size;
+    return CGSizeMake(arc4random() % 500, height);;
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)cvl itemInsetsForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
+}
+
+- (CGSize)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)cvl sizeForHeaderAtSection:(NSInteger)section {
+    return CGSizeMake(arc4random() % 250, self.collectionView.bounds.size.height);
 }
 
 

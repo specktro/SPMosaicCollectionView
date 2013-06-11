@@ -26,8 +26,9 @@
 @property (nonatomic, assign, readonly) UIEdgeInsets itemInsets;
 @property (nonatomic, assign, readonly) CGFloat rowHeigth;
 @property (nonatomic, assign, readonly) NSInteger numberOfItems;
+@property (nonatomic, assign, readonly) CGSize headerSize;
 
-- (id)initWithOrigin:(CGPoint)origin heigth:(CGFloat)heigth rows:(NSInteger)rows itemInsets:(UIEdgeInsets)itemInsets;
+- (id)initWithOrigin:(CGPoint)origin header:(CGSize)header heigth:(CGFloat)heigth rows:(NSInteger)rows itemInsets:(UIEdgeInsets)itemInsets;
 - (void)addItemOfSize:(CGSize)size forIndex:(NSInteger)index;
 - (CGRect)frameForItemAtIndex:(NSInteger)index;
 

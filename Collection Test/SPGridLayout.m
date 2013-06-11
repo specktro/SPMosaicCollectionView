@@ -44,7 +44,12 @@
     NSInteger numberOfSections = self.collectionView.numberOfSections;
     
     for (NSInteger i = 0; i < numberOfSections; i++) {
-        _width += self.headerWidth;
+        CGSize headerSize = CGSizeZero;
+        
+        if ([_myDelegate respondsToSelector:@selector(collectionView:layout:sizeForHeaderAtSection:)])
+            headerSize = [_myDelegate collectionView:self.collectionView layout:self sizeForHeaderAtSection:i];
+        
+        _width += headerSize.width;
         currentOrigin.x = _width;
         
         NSInteger numberOfRows = [_myDelegate collectionView:self.collectionView
@@ -56,6 +61,7 @@
                                   itemInsetsForSectionAtIndex:i];
         
         SPGridLayoutSection *section = [[SPGridLayoutSection alloc] initWithOrigin:currentOrigin
+                                                                            header:headerSize
                                                                             heigth:self.collectionView.bounds.size.height
                                                                               rows:numberOfRows
                                                                         itemInsets:itemInsets];
@@ -95,7 +101,7 @@
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind
                                                                                                                   withIndexPath:indexPath];
     CGRect sectionFrame = section.frame;
-    CGRect headerFrame = CGRectMake(sectionFrame.origin.x - self.headerWidth, 0.0f, self.headerWidth, sectionFrame.size.height);
+    CGRect headerFrame = CGRectMake(sectionFrame.origin.x - section.headerSize.width, 0.0f, section.headerSize.width, sectionFrame.size.height);
     attributes.frame = headerFrame;
     return attributes;
 }
@@ -104,7 +110,7 @@
     NSMutableArray *attributes = [[NSMutableArray alloc] init];
     [_sectionData enumerateObjectsUsingBlock:^(SPGridLayoutSection *section, NSUInteger sectionIndex, BOOL *stop) {
         CGRect sectionFrame = section.frame;
-        CGRect headerFrame = CGRectMake(sectionFrame.origin.x - self.headerWidth, 0.0f, self.headerWidth, sectionFrame.size.height);
+        CGRect headerFrame = CGRectMake(sectionFrame.origin.x - section.headerSize.width, 0.0f, section.headerSize.width, sectionFrame.size.height);
         
         if (CGRectIntersectsRect(headerFrame, rect)) {
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:sectionIndex];

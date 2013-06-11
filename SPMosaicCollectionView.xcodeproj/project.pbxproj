@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		509F23FF17610D320079C4A7 /* SPGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FB17610D320079C4A7 /* SPGridLayout.m */; };
 		509F240017610D320079C4A7 /* SPGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */; };
+		50A6E979176674E7003F8638 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A6E977176674DD003F8638 /* QuartzCore.framework */; };
 		50C8AAAF176100AC001D6CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAAE176100AC001D6CC0 /* UIKit.framework */; };
 		50C8AAB1176100AC001D6CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAB0176100AC001D6CC0 /* Foundation.framework */; };
 		50C8AAB3176100AC001D6CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8AAB2176100AC001D6CC0 /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 		509F23FC17610D320079C4A7 /* SPGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGridLayoutSection.h; sourceTree = "<group>"; };
 		509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGridLayoutSection.m; sourceTree = "<group>"; };
 		509F23FE17610D320079C4A7 /* SPGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGridLayout.h; sourceTree = "<group>"; };
+		50A6E977176674DD003F8638 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		50C8AAAB176100AC001D6CC0 /* SPMosaicCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMosaicCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C8AAAE176100AC001D6CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50C8AAB0176100AC001D6CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A6E979176674E7003F8638 /* QuartzCore.framework in Frameworks */,
 				50C8AAAF176100AC001D6CC0 /* UIKit.framework in Frameworks */,
 				50C8AAB1176100AC001D6CC0 /* Foundation.framework in Frameworks */,
 				50C8AAB3176100AC001D6CC0 /* CoreGraphics.framework in Frameworks */,
@@ -62,10 +65,10 @@
 		50A6E97417662106003F8638 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				509F23FE17610D320079C4A7 /* SPGridLayout.h */,
-				509F23FB17610D320079C4A7 /* SPGridLayout.m */,
 				509F23FC17610D320079C4A7 /* SPGridLayoutSection.h */,
 				509F23FD17610D320079C4A7 /* SPGridLayoutSection.m */,
+				509F23FE17610D320079C4A7 /* SPGridLayout.h */,
+				509F23FB17610D320079C4A7 /* SPGridLayout.m */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 		50C8AAAD176100AC001D6CC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50A6E977176674DD003F8638 /* QuartzCore.framework */,
 				50C8AAAE176100AC001D6CC0 /* UIKit.framework */,
 				50C8AAB0176100AC001D6CC0 /* Foundation.framework */,
 				50C8AAB2176100AC001D6CC0 /* CoreGraphics.framework */,
